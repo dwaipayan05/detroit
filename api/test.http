@@ -1,0 +1,36 @@
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "firstName": "Dishoom",
+    "lastName": "Munshi",
+    "password": "password123"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "firstName": "Dishoom",
+    "lastName": "Munshi",
+    "password": "password123"
+}
+
+###
+
+POST http://localhost:3000/api/repositories
+content-type: application/json
+
+{
+    "url": "https://github.com/dwaipayan05/Muse-Docs"
+}
+
+###
+POST http://localhost:3000/api/chat?repo_name=Muse-Docs&repo_owner=dwaipayan05
+content-type: application/json
+
+{
+    "message": "Tell me about the technologies used in this project"
+}
