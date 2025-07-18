@@ -1,100 +1,41 @@
-# Node.js
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-node\_modules/
-npm-debug.log\*
-yarn-debug.log\*
-pnpm-debug.log\*
-package-lock.json
-yarn.lock
-.pnpm-store/
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Python
+# testing
+/coverage
 
-**pycache**/
-\*.py\[cod]
-\*\$py.class
-.Python
-env/
-venv/
-ENV/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
+# next.js
+/.next/
+/out/
 
-# Byte-compiled / optimized / DLL files
+# production
+/build
 
-\*.egg
-\*.egg-info/
-dist/
-build/
-wheels/
-share/python-wheels/
-\*.whl
+# misc
+.DS_Store
+*.pem
 
-# PyInstaller
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-\*.manifest
-\*.spec
+# env files (can opt-in for committing if needed)
+.env*
 
-# Unit test / coverage reports
+# vercel
+.vercel
 
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.\*
-.cache
-nosetests.xml
-coverage.xml
-\*.cover
-\*.py,cover
-.hypothesis/
-.pytest\_cache/
-
-# Distribution / packaging
-
-develop-eggs/
-downloads/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-\*.egg-info/
-.installed.cfg
-\*.egg
-MANIFEST
-
-# Translations
-
-\*.mo
-\*.pot
-
-# Environments
-
-.env
-.env.\*
-.python-version
-.venv/
-venv/
-
-# Mypy cache
-
-.mypy\_cache/
-
-# IDEs and editors
-
-.vscode/
-.idea/
-\*.swp
-\*\~
-
-# OS files
-
-.DS\_Store
-Thumbs.db
-
-# Custom Files
-repoprocessor/tmp/*
-api/node_modules/*
+# typescript
+*.tsbuildinfo
+next-env.d.ts
